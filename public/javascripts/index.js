@@ -1,9 +1,8 @@
-function genTree(maxDepth, currentDepth = 1, parent = null) {
+function genTree(maxDepth, currentDepth = 1) {
   if (currentDepth > maxDepth) {
     return null;
   }
   const node = {
-    parent,
     depth: currentDepth,
   };
   node.left = genTree(maxDepth, currentDepth + 1, node);
