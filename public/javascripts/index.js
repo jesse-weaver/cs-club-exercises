@@ -48,9 +48,49 @@ const renderer = () => {
   }
 }
 
+const renderNode = renderer();
+
+// depth first traversal of tree
+// function renderTree(tree) {
+//     // FILL THIS OUT!
+//     if (!tree) {
+//       return;
+//     }
+
+//     const {
+//       left,
+//       right,
+//     } = tree;
+
+//     console.log(left);
+//     console.log(right);
+//     if (left) {
+//       renderNode(left);
+//       renderTree(left);
+//     }
+//     if (right) {
+//       renderNode(right);
+//       renderTree(right);
+//     }
+// }
+
+// breadth first traversal
 function renderTree(tree) {
-  const renderNode = renderer();
-  // FILL THIS OUT!
+
+  // store each node in a queue level by level and then work your way through it
+  const queue = [tree];
+
+  while (queue.length > 0) {
+    const item = queue.shift();
+    const { left: firstNode, right: secondNode } = item;
+    renderNode(item);
+    if (firstNode) {
+      queue.push(firstNode);
+    }
+    if (secondNode) {
+      queue.push(secondNode);
+    }
+  }
 }
 
 renderTree(genTree(10));
