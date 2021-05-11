@@ -63,6 +63,11 @@ asap@~2.0.3:
   resolved "http://artifactory.shuttercorp.net/artifactory/api/npm/npm-composite/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
   integrity sha1-5QNHYR1+aQlDIIu9r+vLwvuGbUY=
 
+assert-plus@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/assert-plus/-/assert-plus-1.0.0.tgz#f12e0f3c5d77b0b1cdd9146942e4e96c1e4dd525"
+  integrity sha1-8S4PPF13sLHN2RRpQuTpbB5N1SU=
+
 babel-runtime@^6.26.0:
   version "6.26.0"
   resolved "http://artifactory.shuttercorp.net/artifactory/api/npm/npm-composite/babel-runtime/-/babel-runtime-6.26.0.tgz#965c7058668e82b55d7bfe04ff2337bc8b5647fe"
@@ -85,6 +90,13 @@ babylon@^6.18.0:
   version "6.18.0"
   resolved "http://artifactory.shuttercorp.net/artifactory/api/npm/npm-composite/babylon/-/babylon-6.18.0.tgz#af2f3b88fa6f5c1e4c634d1a0f8eac4f55b395e3"
   integrity sha1-ry87iPpvXB5MY00aD46sT1WzleM=
+
+base-n@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/base-n/-/base-n-1.0.0.tgz#148008d5e2f3220ea84f7a746883abe4913e1879"
+  integrity sha1-FIAI1eLzIg6oT3p0aIOr5JE+GHk=
+  dependencies:
+    dashdash "^1.10.1"
 
 basic-auth@~2.0.0:
   version "2.0.1"
@@ -200,6 +212,13 @@ core-js@^2.4.0:
   version "2.6.10"
   resolved "http://artifactory.shuttercorp.net/artifactory/api/npm/npm-composite/core-js/-/core-js-2.6.10.tgz#8a5b8391f8cc7013da703411ce5b585706300d7f"
   integrity sha1-iluDkfjMcBPacDQRzltYVwYwDX8=
+
+dashdash@^1.10.1:
+  version "1.14.1"
+  resolved "https://registry.yarnpkg.com/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
+  integrity sha1-hTz6D3y+L+1d4gMmuN1YEDX24vA=
+  dependencies:
+    assert-plus "^1.0.0"
 
 debug@2.6.9, debug@~2.6.9:
   version "2.6.9"
@@ -407,9 +426,9 @@ lazy-cache@^1.0.3:
   integrity sha1-odePw6UEdMuAhF07O24dpJpEbo4=
 
 lodash@^4.17.4:
-  version "4.17.15"
-  resolved "http://artifactory.shuttercorp.net/artifactory/api/npm/npm-composite/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha1-tEf2ZwoEVbv+7dETku/zMOoJdUg=
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 longest@^1.0.1:
   version "1.0.1"
